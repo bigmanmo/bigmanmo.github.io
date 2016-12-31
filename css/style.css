@@ -81,7 +81,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .navbar .nav > li { display: block; float: none; height: 80px; }
 .navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
 .navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #ff4141; color: #FFFFFF; }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
 
@@ -97,7 +97,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #experiences .experience { margin-bottom: 20px; }
 #experiences .experience p > strong { display: block; padding-top: 8px; margin-bottom: 10px; }
 #experiences .experience .experience-details { display: block; margin-top: 6px; }
-#experiences .experience .experience-details * { color: #22A39F; }
+#experiences .experience .experience-details * { color: #ff4141; }
 #experiences .experience .experience-details .seperator { color: #BCBCBC; }
 
 #abilities ul > li { min-height: 30px; padding: 3px 0px; }
@@ -113,7 +113,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-#abilities ul > li .ability-score .glyphicon.filled { color: #22A39F; }
+#abilities ul > li .ability-score .glyphicon.filled { color: #ff4141; }
 
 #abilities ul > li:hover .ability-score .glyphicon { margin-left: 2px; }
 
@@ -164,7 +164,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
     width: 100%;
 }
 #projects figure .icon {
-	background: #22A39F;
+	background: #ff4141;
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -273,7 +273,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 /*---------------*/
 
 figure.effect {
-	background: #22A39F;
+	background: #ff4141;
 	color: #FFF;
 }
 
