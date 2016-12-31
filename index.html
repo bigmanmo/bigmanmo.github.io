@@ -17,10 +17,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal website">
-    <meta name="author" content="Mohamed El Shatshat">
+		<meta name="author" content="Mohamed El Shatshat">
+		<meta name="description" content="I'm Mohamed El Shatshat, a passionate developer and student of the world." />
 
-    <title>Mohamed El Shatshat</title>
+    <title>Mohamed El Shatshat - Engineer - Interactive Resume</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -29,7 +29,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link href="/css/style.css" rel="stylesheet" />
 
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
@@ -69,8 +70,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
 										<li>
-												<a class="page-scroll" href="#skillset">About Me</a>
+												<a class="page-scroll" href="#aboutme">About Me</a>
 										</li>
+										<!-- <li>
+												<a class="page-scroll" href="#skillset">Skills</a>
+										</li> -->
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
@@ -88,23 +92,98 @@
     </nav>
 
     <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Mohamed El Shatshat</h1>
-                <p>Aspiring Roboticist, Maker, Volunteer</p>
-								<p class="text-faded">I'm fascinated with actuators, sensors, control systems and how they fit together</p>
 
-            </div>
-        </div>
+					<div id="top" class="jumbotron">
+						<div class="container">
+							<h1>Mohamed El Shatshat</h1>
+							<p class="lead">Interactive resume</p>
+						</div>
+
+						<div class="overlay"></div>
+
+						<!-- <a href="#profile" class="scroll-down">
+							<span class="glyphicon glyphicon-chevron-down"></span>
+						</a>
+					</div> -->
     </header>
 
+
+		<div class="background-white">
+			<section id="aboutme" class="container">
+				<h2>About Me</h2>
+<p class="lead">I'm a jack of all trades.</p>
+
+<hr />
+
+<div class="row">
+	<div class="col-md-4">
+		<h3>About me</h3>
+		<p>
+			I am a student enrolled in Mechatronics Engineering at the University of Waterloo. I have a passion for finding clever solutions to difficult problems. I love a challenge and am always ready to rise above expectations. 		</p>
+	</div>
+	<div class="col-md-4 text-center">
+		<img src="/img/mohamed_el_shatshat.jpg" alt="Mohamed El Shatshat" width="246" height="246" />
+	</div>
+	<div class="col-md-4">
+		<h3>Details</h3>
+		<p>
+			<strong>Name:</strong><br />
+			Mohamed El Shatshat<br />
+			<strong>School Term:</strong><br />
+			3A Mechatronics<br />
+			<strong>Location:</strong><br />
+			Waterloo, Ontario, Canada		</p>
+
+	</div>
+</div>
+</div>
+		</div>
+<!--
+		<section id="skillset">
+ 			 <div class="container"> -->
+ 					 <div class="row">
+ 							 <div class="col-lg-12 text-center">
+ 									 <h2 class="section-heading">Skillset</h2>
+ 									 <!-- <h3 class="section-subheading text-muted">Continuously Improving</h3> -->
+ 							 </div>
+ 					 </div>
+ 					 <div class="row text-center">
+ 							 <div class="col-md-4">
+ 									 <span class="fa-stack fa-4x">
+ 											 <i class="fa fa-circle fa-stack-2x text-primary"></i>
+ 											 <i class="fa fa-image fa-stack-1x fa-inverse"></i>
+ 									 </span>
+ 									 <h4 class="service-heading">Front End Web Development</h4>
+ 									 <p class="text-muted">HTML · CSS<br>JQuery · AJAX<br>Polymer · Bootstrap</p>
+ 							 </div>
+ 							 <div class="col-md-4">
+ 									 <span class="fa-stack fa-4x">
+ 											 <i class="fa fa-circle fa-stack-2x text-primary"></i>
+ 											 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+ 									 </span>
+ 									 <h4 class="service-heading">Programming</h4>
+ 									 <p class="text-muted">Python · Javascript <br>Node.js · Bash<br>C++ · MySQL</p>
+ 							 </div>
+ 							 <div class="col-md-4">
+ 									 <span class="fa-stack fa-4x">
+ 											 <i class="fa fa-circle fa-stack-2x text-primary"></i>
+ 											 <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+ 									 </span>
+ 									 <h4 class="service-heading">Practical</h4>
+ 									 <p class="text-muted">Soldering · PCB Prototyping<br>CNC Router · 3D Printing
+ 											 <br>Woodshop · Metalshop</p>
+ 							 </div>
+ 					 </div>
+ 			 <!-- </div>
+ 	 </section> -->
+
 		<!-- Services Section -->
-	 <section id="skillset">
+	 <!-- <section id="skillset">
 			 <div class="container">
 					 <div class="row">
 							 <div class="col-lg-12 text-center">
 									 <h2 class="section-heading">Skillset</h2>
-									 <!-- <h3 class="section-subheading text-muted">Continuously Improving</h3> -->
+									 <h3 class="section-subheading text-muted">Continuously Improving</h3>
 							 </div>
 					 </div>
 					 <div class="row text-center">
@@ -135,7 +214,7 @@
 							 </div>
 					 </div>
 			 </div>
-	 </section>
+	 </section> -->
 
 
 
@@ -201,69 +280,67 @@
 	<!--Work Experience-->
 	<section class="bg-primary" id="work">
         <div class="container">
-            <div class="row">
-				<div class = "text-center">
-					<h2 class="section-heading">Experience</h2>
-					<hr class="light">
+	        <div class="row">
+						<div class = "text-center">
+							<h2 class="section-heading">Experience</h2>
+							<hr class="light">
 
-					<div class="container-fluid experience">
-						<div class="col-lg-6 text-left">
-							<img src="img/real.jpg" height="350" width="560">
-						</div>
-
-						<div class="col-lg-6 text-left" >
-						<div>
-							<h3 class="text-faded"> SQA Developer </h3>
-							<p class="intro-section"><a class="bg-primary" href="http://www.imaginecommunications.com/" target="_blank">University of Waterloo Realtime Embedded Systems Laboratory</a></p>
-						</div>
-
-							<p class="text-faded">I worked on the <a class="bg-primary" href="https://uwaterloo.ca/embedded-software-group/projects/adas-treadmill-demonstrator" target="_blank">ADAS: Car-on-a-Treadmill</a> project under Professor Sebastian Fischmeister. This project is a novel approach at developing a platform that allows researchers and engineers to verifying their ADAS software on a physical simulation.
-							<br>I designed robust control systems used to keep the cars on track and allow greater maneuverability than they previously had.
-							<br>The control systems were implement using ROS and the cars were modified to allow them to be controlled by a PC running ROS. I prepared documentation on setup and operation of the ADAS simulation system.</p>
-
-						</div>
-					</div>
-
-						<div class="container-fluid experience">
-							<div class="col-lg-6 text-left">
-								<img src="img/real.jpg" height="350" width="560">
-							</div>
-
-							<div class="col-lg-6 text-left" >
-							<div>
-								<h3 class="text-faded"> SQA Developer </h3>
-								<p class="intro-section"><a class="bg-primary" href="http://www.imaginecommunications.com/" target="_blank">University of Waterloo Realtime Embedded Systems Laboratory</a></p>
-							</div>
-
-								<p class="text-faded">I worked on the <a class="bg-primary" href="https://uwaterloo.ca/embedded-software-group/projects/adas-treadmill-demonstrator" target="_blank">ADAS: Car-on-a-Treadmill</a> project under Professor Sebastian Fischmeister. This project is a novel approach at developing a platform that allows researchers and engineers to verifying their ADAS software on a physical simulation.
-								<br>I designed robust control systems used to keep the cars on track and allow greater maneuverability than they previously had.
-								<br>The control systems were implement using ROS and the cars were modified to allow them to be controlled by a PC running ROS. I prepared documentation on setup and operation of the ADAS simulation system.</p>
-
-							</div>
-						</div>
-
-						<div class="container-fluid experience">
-							<div class="col-lg-6 text-left" >
+							<div class="container-fluid experience">
+								<div class="col-lg-6 text-left" >
 								<div>
-									<h3 class="text-faded"> Robotics Engineering Intern </h3>
-									<p class="intro-section"><a class="bg-primary" href="http://www.solusrobots.com/" target="_blank">Solus Robots</a></p>
+									<h3 class="text-faded"> IoT Platform Software Engineer </h3>
+									<p class="intro-section"><a class="bg-primary" href="https://onion.io/" target="_blank">Onion</a></p>
 								</div>
 
-								<p class="text-faded">During my time as a robotics engineer at Solus Robots I designed and fabricated the arm units and external covers for the robot's driving base. I also wrote the code for the Arduino controlled arm joints and built libraries to interact with the various sensors and filter their data. I wrote code to receive commands from the on-board computer. I choreographed and recorded a routine for the robot that attracted investors and customers from various industries.</p>
-								<p>The mechanical designs were done using SolidWorks and fabricated using CAM Software, a CNC Router and a 3D printer.</p>
-								<!--<a href="#portfolioModal1" class="btn btn-default btn-xl">Where I have worked</a>-->
+									<p class="text-faded">I worked on the <a class="bg-primary" href="https://uwaterloo.ca/embedded-software-group/projects/adas-treadmill-demonstrator" target="_blank">ADAS: Car-on-a-Treadmill</a> project under Professor Sebastian Fischmeister. This project is a novel approach at developing a platform that allows researchers and engineers to verifying their ADAS software on a physical simulation.
+									<br>I designed robust control systems used to keep the cars on track and allow greater maneuverability than they previously had.
+									<br>The control systems were implement using ROS and the cars were modified to allow them to be controlled by a PC running ROS. I prepared documentation on setup and operation of the ADAS simulation system.</p>
 
+								</div>
+								<div class="col-lg-6 text-right">
+									<img src="img/real.jpg" height="350" width="560">
+								</div>
 							</div>
 
-							<div class="col-lg-6 text-right">
-								<video width="560" height="350" controls>
-									<source src="http://www.solusrobots.com/Video/RobotGreetings.mp4" type="video/mp4">
-									<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-								</video>
-							</div>
+								<div class="container-fluid experience">
+									<div class="col-lg-6 text-left">
+										<img src="img/real.jpg" height="350" width="560">
+									</div>
+
+									<div class="col-lg-6 text-left" >
+									<div>
+										<h3 class="text-faded"> SQA Developer </h3>
+										<p class="intro-section"><a class="bg-primary" href="http://www.imaginecommunications.com/" target="_blank">Imagine Communications</a></p>
+									</div>
+
+										<p class="text-faded">I worked on the <a class="bg-primary" href="https://uwaterloo.ca/embedded-software-group/projects/adas-treadmill-demonstrator" target="_blank">ADAS: Car-on-a-Treadmill</a> project under Professor Sebastian Fischmeister. This project is a novel approach at developing a platform that allows researchers and engineers to verifying their ADAS software on a physical simulation.
+										<br>I designed robust control systems used to keep the cars on track and allow greater maneuverability than they previously had.
+										<br>The control systems were implement using ROS and the cars were modified to allow them to be controlled by a PC running ROS. I prepared documentation on setup and operation of the ADAS simulation system.</p>
+
+									</div>
+								</div>
+
+								<div class="container-fluid experience">
+									<div class="col-lg-6 text-left" >
+										<div>
+											<h3 class="text-faded"> Robotics Engineering Intern </h3>
+											<p class="intro-section"><a class="bg-primary" href="http://www.solusrobots.com/" target="_blank">Solus Robots</a></p>
+										</div>
+
+										<p class="text-faded">During my time as a robotics engineer at Solus Robots I designed and fabricated the arm units and external covers for the robot's driving base. I also wrote the code for the Arduino controlled arm joints and built libraries to interact with the various sensors and filter their data. I wrote code to receive commands from the on-board computer. I choreographed and recorded a routine for the robot that attracted investors and customers from various industries.</p>
+										<p>The mechanical designs were done using SolidWorks and fabricated using CAM Software, a CNC Router and a 3D printer.</p>
+
+									</div>
+
+									<div class="col-lg-6 text-right">
+										<video width="560" height="350" controls>
+											<source src="http://www.solusrobots.com/Video/RobotGreetings.mp4" type="video/mp4">
+											<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+										</video>
+									</div>
+								</div>
 						</div>
-				</div>
-			</div>
+					</div>
         </div>
     </section>
 
