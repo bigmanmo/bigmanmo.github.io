@@ -39,7 +39,7 @@ function applyNavigation()
 {
 	applyClickEvent();
 	applyNavigationFixForPhone();
-	applyScrollSpy();
+	// applyScrollSpy();
 	applyStickyNavigation();
 }
 
@@ -68,13 +68,13 @@ function applyNavigationFixForPhone()
 	});
 }
 
-function applyScrollSpy()
-{
-	$('#navbar-example').on('activate.bs.scrollspy', function()
-	{
-		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
-	});
-}
+// function applyScrollSpy()
+// {
+// 	$('#navbar-example').on('activate.bs.scrollspy', function()
+// 	{
+// 		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+// 	});
+// }
 
 function applyStickyNavigation()
 {
