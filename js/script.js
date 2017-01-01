@@ -6,7 +6,7 @@ $(document).ready(function()
 	applyNavigation();
 	// applyMailTo();
 	applyResize();
-	// checkHash();
+	checkHash();
 	checkBrowser();
 });
 
@@ -39,7 +39,7 @@ function applyNavigation()
 {
 	applyClickEvent();
 	applyNavigationFixForPhone();
-	// applyScrollSpy();
+	applyScrollSpy();
 	applyStickyNavigation();
 }
 
@@ -68,13 +68,13 @@ function applyNavigationFixForPhone()
 	});
 }
 
-// function applyScrollSpy()
-// {
-// 	$('#navbar-example').on('activate.bs.scrollspy', function()
-// 	{
-// 		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
-// 	});
-// }
+function applyScrollSpy()
+{
+	$('#navbar-example').on('activate.bs.scrollspy', function()
+	{
+		window.location.hash = $('.nav .active a').attr('href').replace('#', '#/');
+	});
+}
 
 function applyStickyNavigation()
 {
@@ -113,16 +113,16 @@ function applyResize()
 }
 
 /* HASH FUNCTION */
-//
-// function checkHash()
-// {
-// 	lstrHash = window.location.hash.replace('#/', '#');
-//
-// 	if($('a[href='+ lstrHash +']').length > 0)
-// 	{
-// 		$('a[href='+ lstrHash +']').trigger('click');
-// 	}
-// }
+
+function checkHash()
+{
+	lstrHash = window.location.hash.replace('#/', '#');
+
+	if($('a[href='+ lstrHash +']').length > 0)
+	{
+		$('a[href='+ lstrHash +']').trigger('click');
+	}
+}
 
 /* IE7- FALLBACK FUNCTIONS */
 
