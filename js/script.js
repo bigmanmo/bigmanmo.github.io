@@ -6,7 +6,7 @@ $(document).ready(function()
 	applyNavigation();
 	applyMailTo();
 	applyResize();
-	checkHash();
+	// checkHash();
 	checkBrowser();
 });
 
@@ -100,20 +100,6 @@ function stickyNavigation()
 	}
 }
 
-/* MAILTO FUNCTION */
-
-function applyMailTo()
-{
-	$('a[href*=mailto]').on('click', function(e)
-	{
-		var lstrEmail = $(this).attr('href').replace('mailto:', '');
-
-		lstrEmail = lstrEmail.split('').reverse().join('')
-
-		$(this).attr('href', 'mailto:' + lstrEmail);
-	});
-}
-
 /* RESIZE FUNCTION */
 
 function applyResize()
@@ -127,16 +113,16 @@ function applyResize()
 }
 
 /* HASH FUNCTION */
-
-function checkHash()
-{
-	lstrHash = window.location.hash.replace('#/', '#');
-
-	if($('a[href='+ lstrHash +']').length > 0)
-	{
-		$('a[href='+ lstrHash +']').trigger('click');
-	}
-}
+//
+// function checkHash()
+// {
+// 	lstrHash = window.location.hash.replace('#/', '#');
+//
+// 	if($('a[href='+ lstrHash +']').length > 0)
+// 	{
+// 		$('a[href='+ lstrHash +']').trigger('click');
+// 	}
+// }
 
 /* IE7- FALLBACK FUNCTIONS */
 
@@ -201,4 +187,4 @@ function searchVersion(pstrDataString)
 	}
 
 	return parseFloat(pstrDataString.substring(lnIndex + this.versionSearchString.length + 1));
-}	
+}
