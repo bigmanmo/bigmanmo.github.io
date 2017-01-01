@@ -19,7 +19,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 .btn-primary { background-color: #ff1a1a; border-color: #ff4141; }
 .btn-primary:hover { background-color: #ff4141;  border-color: #ff4141; }
 
-.icon { display: inline-block; background: url(img/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; }
+.icon { display: inline-block; background: url(/img/sm_icon_sprite.png) no-repeat; height: 32px; width: 32px; }
 .icon.icon-twitter { background-position: 0px 0px; }
 .icon.icon-linkedin { background-position: 0px -32px; }
 .icon.icon-skype { background-position: 0px -64px; }
