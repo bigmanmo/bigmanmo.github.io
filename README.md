@@ -1,1 +1,1 @@
-# bigmanmo.github.io
+# inspeksi.github.io

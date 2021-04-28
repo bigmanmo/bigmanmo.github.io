@@ -1,1466 +1,826 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-
+    <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inspeksi - The Smart Defect Detector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Mohamed El Shatshat">
-	<meta name="description" content="I'm Mohamed El Shatshat, a passionate developer and student of the world." />
-	<link rel="icon" href="/img/icon.ico">
-
-
-    <title>Mohamed El Shatshat - Engineer - Interactive Resume</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-		<link href="/css/style.css" rel="stylesheet" />
-
+	<meta name="description" content="Inspeksi - The Smart Defect Detector" />
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--icons-->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="icon" href="img/icon.png">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
+    <!--header-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top sticky-navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ion-grid icon-sm"></span>
+            </button>
+        <a class="navbar-brand hero-heading" href="#">inspeksi</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#main">Product <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#features">Features</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#team">Team</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--main section-->
+    <section class="bg-texture hero" id="main" style="overflow-y:hidden;">
+        <div class="container" style="align-items:center;">
+            <div class="row d-md-flex brand">
+                <div class="col-md-6 hidden-sm-down wow fadeIn">
+                    <img class="img-fluid mx-auto d-block" src="img/inspeksi.png"/>
+                </div>
+                <div class="col-md-6 col-sm-12 text-white wow fadeIn" style="display: flex;
+justify-content: center;
+flex-direction: column;">
+                    <h2 class="pt-4">Welcome to inspeksi</h2>
+                    <p class="mt-5">
+						<a href="#team" class="btn btn-white mb-2 page-scroll">Meet the Team</a>
+                        <a href="#blog" class="btn btn-primary mr-2 mb-2 page-scroll">Blog</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About-->
+    <section class="bg-white p-0">
+        <div class="container-fluid">
+            <div class="row d-md-flex mt-5">
+                <div class="pl-5 pr-5 pt-5 pb-4 wow fadeIn">
+                    <h3><a href="#">Our Vision</a></h3>
+                    <p class="lead pt-4">Manufacturing processes have limitations that cause deviations and deformities, thus require inspections. Current surface finishes inspections rely on custom processes with expensive tools or human labor.
+                    </p>
+                    <p class="lead pt-4">
+                        We aim to fix that with inspeksi, the smart defect detector. Our plug and play solution offers a wide range of automated features to make inspection of newly manufactured parts fast, efficient, and effective. Simply insert your part into the enclosure and watch how the automated system scans your part and detects defects using a sophisticated AI model that only increases in accuracy as you continue to use the product.</p>
+
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!--features-->
+    <section class="bg-orange" id="features">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-6 col-sm-8 mx-auto text-center wow fadeIn">
+                    <h2 class="text-primary">Features</h2>
+                    <p class="lead mt-4">
+						What makes us great
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5 text-center">
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/chip.svg" height="50px">
+                            </div>
+                            <h6>Autonomy</h6>
+                            <p>
+                                We've made inspeksi easy to use by letting it do all the work for you! Our sytem runs at the press of a button giving you all the details on the defects on your product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/objective.svg" height="50px">
+                            </div>
+                            <h6>Accuracy</h6>
+                            <p>
+                                Our defect detection algorithm is highly accurate, and even becomes more effective as the product learns about defects while you use it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/machinery.svg" height="50px">
+                            </div>
+                            <h6>Control</h6>
+                            <p>
+                                Our device is customizable to your needs. You can save the positions that you want to scan on your part using our record and play back feature.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/stopwatch.svg" height="50px">
+                            </div>
+                            <h6>Fast</h6>
+                            <p>
+                                Find out if a part is defective in seconds. Our system scans several parts a minute, and gives you the results you need almost instantly. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/controls.svg" height="50px">
+                            </div>
+                            <h6>Generalizable</h6>
+                            <p>
+                                Specify what you want inspeksi to consider a defective part, and what defects are acceptable using our interactive user interface.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="icon-box">
+                                <img src="img/flash.svg" height="50px">
+                            </div>
+                            <h6>Plug and Play</h6>
+                            <p>
+                                All you need to get started is two 120v outlets, and a part that you want to inspect, simple as that!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-					<div id="top" class="jumbotron">
-						<div class="container">
-							<h1>Mohamed El Shatshat</h1>
-							<p class="lead">UW Mechatronics</p>
-						</div>
-
-						<div class="overlay"></div>
-
-						<a href="#profile" class="scroll-down">
-							<span class="glyphicon glyphicon-chevron-down"></span>
-						</a>
+    <!--team-->
+    <section class="bg-white" id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-8 mx-auto text-center">
+						<h2 class="text-primary">Our Team</h2>
+						<p class="lead pt-3">
+							Meet the guys behind inspeksi.
+						</p>
 					</div>
-
-					<nav class="navbar navbar-default" id="navbar-example" role="navigation">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse navbar-ex1-collapse">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#profile">Profile</a></li>
-								<li><a href="#experiences">Experience</a></li>
-								<li><a href="#abilities">Skills</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</nav>
-
-
-		<div class="background-white">
-			<div id="profile" class="container">
-				<h2>About Me</h2>
-<p class="lead">Victoria Concordia Crescit</p>
-
-<hr />
-
-<div class="row">
-	<div class="col-md-4">
-		<h3>Who Am I?</h3>
-		<p>
-			I am an engineer with have a passion for finding clever solutions to difficult problems. I recently graduated from the University of Waterloo Mechatronics Engineering program. I love a challenge and I am always ready to rise above expectations. 		</p>
-	</div>
-	<div class="col-md-4 text-center">
-		<img src="/img/me.png" alt="Mohamed El Shatshat" width="246" height="246" />
-	</div>
-	<div class="col-md-4">
-		<h3>Details</h3>
-		<p>
-			<strong>Name:</strong><br />
-			Mohamed Elshatshat<br />
-			<strong>Location:</strong><br />
-			Waterloo, Ontario, Canada		</p>
-
-	</div>
-</div>
-</div>
-		</div>
-
-
-		<div id="experiences" class="container">
-			<h2>Experience</h2>
-<p class="lead">
-	&ldquo;The only source of knowledge is experience.&rdquo;<br />- Albert Einstein
-</p>
-
-<hr />
-
-
-<h3>Work Experience</h3>
-
-
-<div class="experiences">
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>NGCodec</h4>
-			<p class="experience-period">
-				May 2018				-
-				Aug 2018			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Video Codec Engineer</strong>
-				<span class="hidden-phone">
-					  NGCodec is one of the leaders in live video encoding. Here I worked on the the latest encoders, and developed an in-house video analyzer to assist with encoder testing and verification.   				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Waterloo, Ontario					</span>
-
-
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="https://ngcodec.com/" target="_blank">https://ngcodec.com/</a>
-					</span>
-
-
-				</span>
-			</p>
-		</div>
-	</div>
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Clearpath Robotics</h4>
-			<p class="experience-period">
-				Jan 2018				-
-				May 2018			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Embedded Software Developer</strong>
-				<span class="hidden-phone">
-					  I worked on some of the coolest robots in the world here at Clearpath. I got to modify some of the older robots to use new microcontrollers and motor controllers, and got to write the software to make it all work. I also got to work on some great sensor integration tools for camera timings and more!  				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Waterloo, Ontario					</span>
-
-
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="https://www.clearpathrobotics.com/" target="_blank">https://www.clearpathrobotics.com/</a>
-					</span>
-
-
-				</span>
-			</p>
-		</div>
-	</div>
-
+				</div>
 	
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>OpenText</h4>
-			<p class="experience-period">
-				May 2017				-
-				Aug 2017			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Software Developer</strong>
-				<span class="hidden-phone">
-					  At OpenText I had the pleasure of working on Core, a cloud-based file synchronization and sharing platform. I was a member of the desktop client team, and as part of the team I worked on both the client written in Node.js, and the synchronization engine written in Python. I developed many new features for the client including a more refined automated testing platform for the system. I also worked on adding Core compatibility to other OpenText products to match client specifications.  				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Waterloo, Ontario					</span>
+				<div class="row d-md-flex mt-5 text-center">
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/toni.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Oluwatoni Ogunmade</h5>
+						<p>Robot Design Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/herman.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Herman Grewal</h5>
+						<p>Mechanical Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/mo.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Mohamed El Shatshat</h5>
+						<p>Product Design and Integration Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/lalit.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Lalit Lal</h5>
+						<p>Electrical Lead</p>
+					</div>
+					<div class="team col-sm-4 mt-2 wow fadeIn">
+						<img src="img/rey.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
+						<h5>Rey Wiyatno</h5>
+						<p>AI/Vision Lead</p>
+					</div>	
+				</div>
+			</div>
+		</section>
+
+    <!--blog-->
+    <section class="bg-light" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center ">
+                    <h2 class="text-primary">From Our Blog</h2>
+                    <p class="lead">
+                        The latest news about inspeksi.
+                    </p>
+                </div>
+            </div>
+            <div class="row d-md-flex mt-5">
+
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/inspeksi-board.png" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Mar. 13 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Herman Grewal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 5 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Finishing off our Symposium Poster
+								</p>
+							</h5>
+							<p class="card-text">
+								Here's our poster for the symposium! We've gone for a bright and exciting look to attract eyes on Friday.					</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#poster" class="card-link" data-toggle="modal" data-target="#poster"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/full_run_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Mar. 12 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 2 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Running Everything Together
+								</p>
+							</h5>
+							<p class="card-text">
+								Everything has been fully integrated and now it's time for some final tests.							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#fullRun" class="card-link" data-toggle="modal" data-target="#fullRun"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="http://www.opentext.com/" target="_blank">http://www.opentext.com/</a>
-					</span>
-
-
-				</span>
-			</p>
-		</div>
-	</div>
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Onion Inc.</h4>
-			<p class="experience-period">
-				Sept 2016				-
-				Dec 2016			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>IoT Invention Platform Software Engineering</strong>
-				<span class="hidden-phone">
-					Onion created the Omega, an easy to use development board. I was a part of the Onion team that helped bring the Omega2 to the overwhelming amount of Kickstarter and Indiegogo backers. I developed a streamlined web-based setup wizard, and worked on the web-based console. I also developed several Node.js applications that ran in Docker containers including an program that would process incoming product orders and handle the shipping costs and payments. I wrote the device's network manager to handle wifi connections, and wrote content for the Omega2 including tutorials, projects, and troubleshooting.  				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Markham, Ontario					</span>
-
-
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="https://onion.io/" target="_blank">https://onion.io/</a>
-					</span>
-
-
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Imagine Communications</h4>
-			<p class="experience-period">
-				Jan 2016				-
-				May 2016			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>SQA Developer</strong>
-				<span class="hidden-phone">
-					Imagine Communications is a media software company. Here I worked on Onyx, an in-development web based media broadcast playlist. I learned the basics of web development and wrote Python scripts to automate testing through RabbitMQ.				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Waterloo, Ontario					</span>
-
-
-					<span class="seperator">|</span>
-					<span class="link">
-						<span class="glyphicon glyphicon-link"></span>
-						<a href="http://www.imaginecommunications.com/" target="_blank">http://www.imaginecommunications.com/</a>
-					</span>
-
-
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Solus Robots</h4>
-			<p class="experience-period">
-				May 2015				-
-				Aug 2015			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Mechatronics Engineer</strong>
-				<span class="hidden-phone">
-					During my time at Solus Robots I designed and built the arms of the robot and the external covers for the robot's driving base. I also wrote the code for the Arduino controlled arm joints and built libraries to interact with the various sensors and filter their data. I wrote code to receive commands from the on-board Arduino Uno. I choreographed and recorded a routine for the robot that attracted investors and customers from various industries.				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Vaughn, Ontario					</span>
-
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-</div>
-
-<hr />
-
-<h3>Education</h3>
-
-
-<div class="experiences">
-
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>University of Waterloo</h4>
-			<p class="experience-period">
-				September 2014				-
-				May 2019			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Mechatronics Engineering</strong>
-				<span class="hidden-phone">
-					Enrolled in the Mechatronics Engineering program at the University of Waterloo and graduated in 2019. I spent my days learning about all things software, hardware, and engineering related. 				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Waterloo, Ontario					</span>
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-	<div class="experience row">
-		<div class="col-md-4">
-			<h4>Sir John A. Macdonald Secondary School</h4>
-			<p class="experience-period">
-				Sept 2009				-
-				Jun 2014			</p>
-		</div>
-		<div class="col-md-8">
-			<p>
-				<strong>Highschool</strong>
-				<span class="hidden-phone">
-					Developed a passion for science and engineering during my time here.				</span>
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-						Waterloo, Ontario					</span>
-				</span>
-			</p>
-		</div>
-	</div>
-
-
-</div>
-
-		</div>
-
-
-
-
-<div class="background-white">
-	<div id="abilities" class="container">
-			<h2>Skills</h2>
-		<p class="lead">
-		&ldquo;Life without knowledge is death in disguise.&rdquo;<br />- Talib Kweli
-		</p>
-
-		<hr />
-
-		<h3>Software</h3>
-
-		<div class="row">
-
-
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-
-			<li>
-				<span class="ability-title">Python</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Node.js</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">C/C++</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">MATLAB</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-
-			<li>
-				<span class="ability-title">Real-Time</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-		</ul>
-		</div>
-
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-			<li>
-				<span class="ability-title">Object Oriented Programming</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Shell Scripting</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Polymer Framework</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-
-			<li>
-				<span class="ability-title">MySQL</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">ROS</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled "></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-		</ul>
-		</div>
-
-
-		</div>
-
-		<hr />
-
-		<h3>Tools</h3>
-
-		<div class="row">
-
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-
-			<li>
-				<span class="ability-title">Windows</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Linux</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Git / Git Flow</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Docker</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-			<li>
-				<span class="ability-title">AngularJS</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-		</ul>
-		</div>
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-
-			<li>
-				<span class="ability-title">Arduino</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
 			
-
-			<li>
-				<span class="ability-title">Node-Webkit</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-
-			<li>
-				<span class="ability-title">Karma</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-
-			<li>
-				<span class="ability-title">Amazon Web Services</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-		</ul>
-		</div>
-
-		</div>
-
-		<hr />
-
-		<h3>Hardware</h3>
-
-		<div class="row">
-
-
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-			<li>
-				<span class="ability-title">SOLIDWORKS</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">AutoCAD</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Soldering</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-				</span>
-			</li>
-
-
-
-		</ul>
-		</div>
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-
-			<li>
-				<span class="ability-title">Rapid Prototyping</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-					<span class="glyphicon glyphicon-star"></span>
-
-
-				</span>
-			</li>
-
-
-			<li>
-				<span class="ability-title">PCB Prototyping</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">ANSYS</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-		</ul>
-		</div>
-
-
-		</div>
-
-
-
-		<hr />
-
-		<h3>Languages</h3>
-
-		<div class="row">
-
-
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-			<li>
-				<span class="ability-title">English</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">French</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-				</span>
-			</li>
-
-
-
-		</ul>
-		</div>
-		<div class="col-md-6">
-		<ul class="no-bullets">
-
-
-
-			<li>
-				<span class="ability-title">Arabic</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-			<li>
-				<span class="ability-title">Spanish</span>
-				<span class="ability-score">
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star filled"></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-					<span class="glyphicon glyphicon-star "></span>
-
-
-				</span>
-			</li>
-
-
-
-		</ul>
-		</div>
-
-
-		</div>
-
-
-	</div>
-</div>
-
-
-
-
-<div id="projects" class="container">
-	<h2>Projects</h2>
-<p class="lead">
-&ldquo;A little nonsense now and then, is cherished by the wisest men.&rdquo;<br />- Roald Dahl
-</p>
-
-<hr />
-
-
-<div class="row">
-	
-	
-	<div class="col-md-6 col-sm-12 col-xs-12">
-		<figure class="effect">
-			<img src="/img/portfolio/4.jpg" alt="Inspeksi" style="height:286px; width 429px;"/>
-
-			<figcaption>
-				<h3>Inspeksi</h3>
-				<p>An automated manufacturing defect detection system.</p>
-				<p><strong>Tags:</strong> <br />C, Python, Robotics, Controls, AI</p>
-				<a data-toggle="modal" href="/#portfolioModal4"></a>
-				<span class="icon">
-					<span class="glyphicon glyphicon-new-window"></span>
-				</span>
-			</figcaption>
-		</figure>
-	</div>
-
-	<div class="col-md-6 col-sm-12 col-xs-12">
-		<figure class="effect">
-			<img src="/img/portfolio/3.jpg" alt="Underwater ROV" style="height:286px; width 429px;"/>
-		
-			<figcaption>
-				<h3>Underwater ROV</h3>
-				<p>An autonomous underwater vehicle.</p>
-				<p><strong>Tags:</strong> <br />C, Arduino, Robotics, Controls</p>
-				<a data-toggle="modal" href="/#portfolioModal3"></a>
-				<span class="icon">
-					<span class="glyphicon glyphicon-new-window"></span>
-				</span>
-			</figcaption>
-		</figure>
-	</div>
-
-	<div class="col-md-6 col-sm-12 col-xs-12">
-		<figure class="effect">
-			<img src="/img/portfolio/1.jpg" alt="Midnight Project" style="height:286px; width 429px;"/>
-		
-			<figcaption>
-				<h3>Midnight Project</h3>
-				<p>A questionnaire for MS patients.</p>
-				<p><strong>Tags:</strong> <br />Hackathon, Python, MS Office, MySQL</p>
-				<a data-toggle="modal" href="/#portfolioModal1"></a>
-				<span class="icon">
-					<span class="glyphicon glyphicon-new-window"></span>
-				</span>
-			</figcaption>
-		</figure>
-	</div>
-		
-	<div class="col-md-6 col-sm-12 col-xs-12">
-		<figure class="effect">
-			<img src="/img/portfolio/2.jpg" alt="Real Time Space Invaders" style="height:286px; width 429px;"/>
-		
-			<figcaption>
-				<h3>Real Time Space Invaders</h3>
-				<p>A Space Invaders clone running on a Real Time OS.</p>
-				<p><strong>Tags:</strong> <br />C, Real Time, Game Development</p>
-				<a data-toggle="modal" href="/#portfolioModal2"></a>
-				<span class="icon">
-					<span class="glyphicon glyphicon-new-window"></span>
-				</span>
-			</figcaption>
-		</figure>
-	</div>
-	
-</div>
-
-</div>
-
-
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>The Midnight Project</h2>
-                            <p class="item-intro text-muted">Data entry application targeted at Multiple Sclerosis patients</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/1.jpg" alt="">
-
-
-                           	 <p>The Midnight Project is a system used to help Multiple Sclerosis patients keep track of everyday symptoms. <br>It consists of a questionnaire for patients to enter data, and a database that stores the patient's day to day data. This data is analyzed and notifies the patient  via email of any positive or negative trends in order to figure out what makes them feel good or bad.
-														<br>The questionnaire was built using QT4 and Python. The database was created with MySQL and Microsoft Excel.</p>
-														<p>Created by Kevin Huo, Toni Ogunmade, Herman Grewal and Mohamed El Shatshat for Hack 4 Health 2015. It was selected as one the top ten hacks at the event.</p>
-
-							<div class="col-lg-12 text-center">
-								<p>
-								<a href="https://github.com/Oluwatoni/theMidnightProject" target="_blank">GitHub</a>
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/algo_testing.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Mar. 10 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Rey Wiyatno &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 2 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Testing our Defect Detection Algorithm on real parts
 								</p>
+							</h5>
+							<p class="card-text">
+								We're using parts donated by ecobee in order to test our system's effectiveness using a dataset containing completely arbitrary parts.							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#algoTest" class="card-link" data-toggle="modal" data-target="#algoTest"><strong>Read more</strong></a>
 							</div>
-
-							<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-		<!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Real Time Space Invaders</h2>
-                            <p class="item-intro text-muted">Space Invaders clone written in C</p>
-
-                            <p style="margin-bottom: 0px;">This clone of a popular arcade game runs on a Keil Arm Cortex development board using Keil RTX. It is written in C and uses four peripherals on the board: the LCD screen that displays the game, a 4-directional joystick to handle movement, LEDs that show how many lives you've got left, and a pushbutton used to shoot.
-														<br>The game runs with four threads that handle screen refresh, collision detection, score upkeep, and peripheral management.</p>
-
-														<div class="img-responsive img-centered" style="width: 100%; height: 0px; position: relative; padding-bottom: 180.000%;"><iframe src="https://streamable.com/e/h5hjy?hd=1" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 90%; height: 90%; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);"></iframe><script async defer src="https://v.embedcdn.com/embed.js"></script></div>
-														<p>Created by Kenneth Wong and Mohamed El Shatshat for the MTE241 course at the University of Waterloo as a cumulative project.</p>
-
-							<div class="col-lg-12 text-center">
-								<p>
-								<a href="https://github.com/KennethWong15/SpaceInvaderClone" target="_blank">GitHub</a>
-								</p>
-							</div>
-
-							<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-		<!-- Portfolio Modal 3 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
 						</div>
 					</div>
 				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<h2>Remotely Operated Underwater Vehicle (ROV)</h2>
-								<p class="item-intro text-muted">An autonomous underwater vehicle.</p>
-	                            <img class="img-responsive img-centered" src="img/portfolio/3.jpg" alt="">
-								
-								<p style="margin-bottom: 0px;">For the MTE 380 course, Mechatronics Engineering Design Workshop, our team was tasked with designing a robot to complete an underwater obstacle course. To acheive the full marks in the course, the robot was expected to complete the obstacle autonomously. I was responsible for the software development for the sensing and controls on-board the robot, as well as the teleoperation.
-															<video src="img/portfolio/3_vid.mp4" width="325" height="230" allowfullscreen="true" muted controls loop />
-															<p>Created by for the MTE380 course at the University of Waterloo as a cumulative project.</p>
+
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/backdrive_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 24 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Oluwatoni Ogunmade &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 4 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Recording arm positions and playback
+								</p>
+							</h5>
+							<p class="card-text">
+								Utilizing the back-driveability of the arms to allow positions to be recorded and played back.							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#backdrive" class="card-link" data-toggle="modal" data-target="#backdrive"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/arm_redesign_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 17 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Oluwatoni Ogunmade &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 5 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Robotic Arm Redesigns
+								</p>
+							</h5>
+							<p class="card-text">
+								Changes made to the initial design of the robotic arm after manufacturing and assembly to reduce the arm's weight and improve the strength.
+							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#armRedesign" class="card-link" data-toggle="modal" data-target="#armRedesign"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
 	
-								<div class="col-lg-12 text-center">
-									<p>
-									<a href="https://github.com/bigmanmo/UnderwaterROV" target="_blank">GitHub</a>
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/motor_controllers.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 7 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 3 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Completing Electrical Assembly of Robotic Arm
+								</p>
+							</h5>
+							<p class="card-text">
+								The team is using various electronics that operate at different voltage levels. Since various parts communicate with each other, some interfacing and electronic design is required.							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#electricalAssembly" class="card-link" data-toggle="modal" data-target="#electricalAssembly"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/dynamixel_comm_pic.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Feb. 5 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Lalit Lal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 3 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Establishing Communication with Dynamixel Smart Serial Servos
+								</p>
+							</h5>
+							<p class="card-text">
+								Communicating with the smart servos is a crucial stage in development to initiate the controls software development for moving the robotic arm in a confined space.
+							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#motorComm" class="card-link" data-toggle="modal" data-target="#motorComm"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			<!--                -->
+			<div class="col-sm-4 mt-2 wow fadeIn">
+				<div class="blogcard">
+					<img class="card-img-top" src="img/instance_segmentation.png" alt="Image">
+					<div class="card-body">
+						<p class="card-text text-muted small-xl">
+							<em class="ion-ios-calendar-outline"></em> Feb. 3 '19 &nbsp;&nbsp;
+							<em class="ion-ios-person-outline"></em> Rey Wiyatno &nbsp;&nbsp;
+							<em class="ion-ios-time-outline"></em> 5 min
+						</p>
+						<h5 class="card-title">
+							<p class="blogtitle">
+								From Object Detection to Instance Segmentation
+							</p>
+						</h5>
+						<p class="card-text">
+							The algorithm used for the initial demo in the final design project was the object detection algorithm called the Single-shot Multibox Detector (SSD). The algorithm is now changed to instance segmentation model called the Mask R-CNN.
+						</p>
+						<div class="card-body text-right" style="height:0px">
+							<a href="#instanceSegmentation" class="card-link" data-toggle="modal" data-target="#instanceSegmentation"><strong>Read more</strong></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+				
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+						<div class="blogcard">
+							<img class="card-img-top" src="img/light_ring.jpg" alt="Image">
+							<div class="card-body">
+								<p class="card-text text-muted small-xl">
+									<em class="ion-ios-calendar-outline"></em> Jan. 21 '19 &nbsp;&nbsp;
+									<em class="ion-ios-person-outline"></em> Mohamed El Shatshat &nbsp;&nbsp;
+									<em class="ion-ios-time-outline"></em> 1 min
+								</p>
+								<h5 class="card-title">
+									<p class="blogtitle">
+										Lighting Developments
 									</p>
+								</h5>
+								<p class="card-text">
+										The Neopixel LED ring came in and is quite bright. 
+										It also fits over the camera nicely, allowing us to change our mounting strategy.							</p>
+								<div class="card-body text-right" style="height:0px">
+									<a href="#lightingDev" class="card-link" data-toggle="modal" data-target="#lightingDev"><strong>Read more</strong></a>
 								</div>
-	
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
 							</div>
+						</div>
+					</div>
+
+				<!--                -->
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/enclosureRedesign.png" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Jan. 18 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Herman Grewal &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 5 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Enclosure Redesigns
+								</p>
+							</h5>
+							<p class="card-text">
+								The material for the enclosure design is now sourced from the Engineering Machine Shop. Special thanks to
+							</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#boxRedesign" class="card-link" data-toggle="modal" data-target="#boxRedesign"><strong>Read more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-sm-4 mt-2 wow fadeIn">
+					<div class="blogcard">
+						<img class="card-img-top" src="img/team_photo.jpg" alt="Image">
+						<div class="card-body">
+							<p class="card-text text-muted small-xl">
+								<em class="ion-ios-calendar-outline"></em> Jan. 14 '19 &nbsp;&nbsp;
+								<em class="ion-ios-person-outline"></em> Mohamed El Shatshat &nbsp;&nbsp;
+								<em class="ion-ios-time-outline"></em> 1 min
+							</p>
+							<h5 class="card-title">
+								<p class="blogtitle">
+									Team Photo
+								</p>
+							</h5>
+							<p class="card-text">Left to right - Toni, Herman, Mohamed, Lalit, Rey</p>
+							<div class="card-body text-right" style="height:0px">
+								<a href="#teamPhoto" class="card-link" data-toggle="modal" data-target="#teamPhoto"><strong>Read more</strong></a>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	
+		
+    </section>
 
-		<!-- Portfolio Modal 4 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<h2>Inspeksi - The Smart Defect Detector</h2>
-								<p class="item-intro text-muted">An automated manufacturing defect detection system.</p>
-	
-								<p style="margin-bottom: 0px;">Inspeksi is an automated defect detection system that uses machine learning tools to enhance low cost equipment to produce accurate and reliable results. Our product was able to quickly detect scratches, dents, and discolorations in plastic, wood, and metal using a cheap webcam. I worked on the product design and integration between the robot arm and the AI backend.
-	
-															<video src="img/portfolio/4_vid.mp4" width="325" height="230" allowfullscreen="true" muted controls loop/>
-															<p>Created by Mohamed Elshatshat, Toni Ogunmade, Herman Grewal, Lalit Lal, and Rey Wiyatno for the MTE481/482 course at the University of Waterloo as a cumulative project.</p>
-	
-								<!-- <div class="col-lg-12 text-center">
-									<p>
-									<a href="https://github.com/KennethWong15/SpaceInvaderClone" target="_blank">GitHub</a>
-									</p>
-								</div> -->
-	
-								<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!--contact-->
+    <section class="bg-texture-collage p-0" id="contact">
+        <div class="container">
+            <div class="row d-md-flex text-white text-center wow fadeIn">
 
+                <div class="col-sm-6 p-5">
+                    <p><em class="ion-ios-email-outline icon-md"></em></p>
+                    <p class="lead">inspeksi@gmail.com</p>
+                </div>
+                <div class="col-sm-6 p-5">
+                    <p><em class="ion-ios-location-outline icon-md"></em></p>
+                    <p class="lead">Waterloo, Canada</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--footer-->
+    <section class="bg-footer" id="connect">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
+                    <h1>inspeksi</h1>
+                    <p class="mt-4" style="display: inline-block">
+                        <a href="https://github.com/inspeksi" target="_blank"><em class="ion-social-github text-facebook-alt icon-sm mr-3"></em></a>
+                    </p>
+                    <p class="pt-2 text-muted">
+                        &copy; 2017 Comply Theme. A Free Bootstrap 4 product landing page theme by
+                        <a href="https://wireddots.com/">Wired Dots</a>. Developed by <a href="https://twitter.com/attacomsian">@attacomsian</a>
+                    </p>
+                    <p class="pt-2 text-muted">
+                        Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </p>
+                </div>
+            </div>
 
+        </div>
 
+    </section>
 
-		<div class="background-gray">
-			<div id="contact" class="container">
-				<h2>Contact</h2>
-<hr />
-
-<div class="row">
-	<div class="col-md-6">
-		<ul class="no-bullets">
-			<li>
-				<a href="https://github.com/bigmanmo" target="_blank">
-					<i class="fa fa-github" aria-hidden="true" style="font-size:2.5em; width:50px"></i>
-					https://github.com/bigmanmo				</a>
-			</li>
-		</ul>
-	</div>
-		<div class="col-md-6">
-			<ul class="no-bullets">
-				<li>
-					<a href="https://ca.linkedin.com/in/mohamed-el-shatshat-082b2885/" target="_blank">
-						<i class="fa fa-linkedin" aria-hidden="true" style="font-size:2.5em; width:50px"></i>
-						http://linkedin.com/in/mohamed-el-shatshat/				</a>
-				</li>
-			</ul>
-		</div>
-</div>
-
-<hr />
-
-<div class="text-center">
-		<div>
-				<h2>Resume</h2>
-
-<a href="doc/resume.pdf" class="btn btn-default" target="_blank">Download</a>
-		</div>
-</div>
-
-		</div>
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="/js/script.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script src="/js/script.js"></script>
 </body>
+
+
+	<!-- Portfolio Modal 1 -->
+	<div id="boxRedesign" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+		
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Enclosure Redesign</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+		
+					<div class="modal-body text-center">
+						<img class="card-img-top img-thumbnail" src="img/enclosureRedesign1.jpg" alt="Image" style="max-width:50%; ">
+						<p style="text-align: justify; padding-top: 5%">
+							In order to source the material from the Machine Shop, the availability had to be considered. 
+							The original 1/2'’ angle brackets had to be changed to the 3/4'’ angle brackets. 
+							This required a change to the hole positions. In addition, space for the nut had to be verified. 
+							In the original design, there was a 1/16’’ gap between the frame and the panels in some locations. 
+							To resolve this, a notch was made in the angle bracket to create a closed seam at the enclosure edges. 
+							The final cost of the enclosure including material, machining and tax is $208.49. Some additional work was 
+							done to clean rough edges.
+						</p>
+						<img class="card-img-top img-thumbnail" src="img/enclosureRedesign2.jpg" alt="Image" style="max-width:50%; ">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="lightingDev" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+			
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Enclosure Redesign</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						</div>
+			
+						<div class="modal-body text-center">
+							<img class="card-img-top img-thumbnail" src="img/light_ring.jpg" alt="Image" style="max-width:50%; ">
+							<p style="text-align: justify; padding-top: 5%">
+									The lights were originally were going to be placed underneath the camera, 
+									but with the the size of the ring light allows it to be placed right over the lens. The next thing is to interface with the camera. The Adafruit tutorial for the lights includes a guide for controlling the lights with a python script, as opposed to the included Arduino library. This will be used to control the lights via the Raspberry Pi.
+								</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div id="instanceSegmentation" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+			
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Instance Segmentation</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						</div>
+			
+						<div class="modal-body text-center">
+							<!-- <img class="card-img-top img-thumbnail" src="img/enclosureRedesign.png" alt="Image" style="max-width:50%; "> -->
+							<p style="text-align: justify; padding-top: 5%">
+									In the previous term, an object detection algorithm called the Single-shot Multibox Detector (SSD) (Liu et al., 2016) was used to classify and localize defects in an image. The algorithm however has a limitation since it can only localizes defects in terms of bounding boxes, and thus is not able to quantify the size of the defects perfectly. An example of the output from object detection model is shown in the figure below.
+							</p>
+							<img src="img/singleshot.gif" style="max-width:50%; ">
+							<p style="text-align: justify; padding-top: 5%">
+									In contrast, instance segmentation algorithms, like the Mask R-CNN (He et al., 2017), are designed to localize object in an image on the pixel level. This is definitely desirable for the application of detecting defects, since one of the metrics to quantify defects are by measuring the size of the defects. In order to test the algorithm, a Mask R-CNN model was trained on a small dataset that contains images with scratches. Indeed, the algorithm was able to classify and localize the scratches in the image better than the object detection model. The preliminary results of using Mask R-CNN can be found below. 
+							</p>
+							<img src="img/instance_segmentation.png" alt="Image" style="max-width:50%; ">
+						</div>
+					</div>
+				</div>
+			</div>
+		
+				<!-- Portfolio Modal 1 -->
+		<div id="motorComm" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+		
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Establishing Communication with Dynamixel Smart Serial Servos</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					</div>
+		
+					<div class="modal-body text-center">
+						<img src="img/dynamixel_comm_pic.jpg" alt="Image" style="max-width:50%; ">
+						<p style="text-align: justify; padding-top: 5%">
+							Communicating with the smart servos is a crucial stage in development to initiate the controls software development for moving the robotic arm in a confined space.
+							However, since two different types of servos are being used (which use two different voltage levels), two Robotis developed controllers were purchased to allow us to operate at the distinct voltage levels of our motor types. The electronics were assembled to establish communication with the XL series motor this week - using a variable buck converter to reduce a fixed 12V source to 7.4V, the level needed for the XL series motor. Currently, we are able to communciate to the motors from a laptop->controller->motor using serial communication. The next goal moving forward is to utilise a RasberryPi to communicate to the controller using UART or USB (still under investigation). In parallel, electronics assembly for the AX series motors will be completed this week to allow for full communication with all motors. In addition, this week, backdrivability tests will be conducted to see how to read status information from the motors.
+						</p>
+						<embed src="img/dynamixel_comm.mp4" width="325" height="230" allowfullscreen="true" />
+					</div>
+				</div>
+			</div>
+		</div>
+	
+				<!-- Portfolio Modal 1 -->
+				<div id="armRedesign" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Robotic Arm Redesigns</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/arm_redesign_pic.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+									The arm was assembled from the shoulder to the end effector, during this process mistakes in the original design were marked down and used to inform a redesign. The issues mostly consisted of interference, wrong hole measurements and a lack of counterbores for the bolt heads. The arm has 5 plastic parts that make up the frame, the base plate, the turntable, the humerus, the radius and the camera mount. Each part is connected to the next part through one of the four motors and fastened using bolt and nuts.
+									<br>
+									The base plate lacked counterbore holes, without them the turntable would interfere during its rotation. The new base plate included the counterbore holes. The second version of the base plate also include a space for the bolts to lower the motor and give room for the wires to pass through.
+									<br>
+									The turntable’s design had a few flaws, the fillets facing motor 1 interfered with the motor’s motion reducing the range of motion from 180 degrees to 15 degrees. The second version of the turntable has a much slimmer frame without fillets facing the motors allowing the full range of motion.
+									<br>
+									When fully assembled the humerus wasn’t securely held at the shoulder joint allowing it to shake significantly during trial operations. The bolt heads on elbow side interfered with the radius. To address those issues, a hook like protrusion was added to the shoulder end of the humerus allowing the weight of the arm to be supported on both sides during operation. Counterbores were added to the holes on the wrist.
+									The radius’ elbow cutout restricted the range of motion of the arm. To counteract this the cutout was lengthened.
+									<br>
+									The arm when assembled, lacking the camera and the wiring, weighed in at 0.4kgs which meant it was over the 0.31kg weight limit. To reduce the weight the heaviest pieces, the humerus and the radius were lightened. By introducing a cutout in the middle of each piece 0.12kg was removed.									
+								</p>
+								<embed src="img/arm_redesign.mp4" width="325" height="230" allowfullscreen="true" />
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Portfolio Modal 1 -->
+				<div id="electricalAssembly" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Completing Electrical Assembly of Robotic Arm</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/motor_controllers.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+									The robotic arm uses 2 types of motors, operating at 11.1V and 7.4V. Consequently, since other devices in the project operate at 5V, the team agreed to use a 12V supply and use a buck converter to create three voltage rails (11.1V, 7.4V, and 5V). After connecting and tuning the various buck converters, the team tested if all motors were able to connect to the their respective controller. Since Dynamixel motors use different protocol (USB2DYNAMIXEL), a unique, half-duplex capable controller that is compatible for both types of motors was used to communicate with the serial servos. 
+									<br>
+									In summary, 3 buck converters were used, 2 Dynamixel controllers were used, and a 12V, 100W power supply that is CSA approved.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				
+				<!-- Portfolio Modal 1 -->
+				<div id="backdrive" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Recording arm positions and playback</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/backdrive_pic.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+										An important feature in the design of the system is the record and playback feature. This allows users to control where they would like the arm to go to fit the parts they're trying to inspect, rather than relying on the default movement. Physically moving the arm is also much easier than trying to figure out the values that the servo needs in order to get to a specific orientation.
+										<br>
+										There are two stages to accomplishing this feat. The first is to read the values of the servos as the arm is being moved. These values are read, and stored in an array that contains values for the 3 motors. Once this is complete, the sequence is ready to be played back.
+										<br>
+										Playback of the sequence is simply writing the values of the array of saved points to the servo, resulting in the playback of the recorded motion. Once this is finished, the arm will return to the specified home position.
+								</p>
+								<embed src="img/backdrive.mp4" width="325" height="230" allowfullscreen="true" />
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Portfolio Modal 1 -->
+				<div id="algoTest" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Testing our Defect Detection Algorithm on Real Parts</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/algo_testing.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+										It's time to test our algorithm on an actual test case. We took the parts graciously donated by ecobee and started first by inspecting the parts without scratches to validate that we don't get false positives. This proved to be successful on the parts.
+										<br>
+										Next, we tried to scratch the glass thermostat but that proved to be difficult due to the thermostat using gorilla glass. Very scratch resistant. The smaller white room sensor is an injection molded part and so it is easily scratched. Once scratched we enabled the record and playback mode and took the pictures we needed. The results can be seen in the image above. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Portfolio Modal 1 -->
+				<div id="fullRun" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Testing our Defect Detection Algorithm on Real Parts</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/full_run_pic.jpg" alt="Image" style="max-width:50%; ">
+								<p style="text-align: justify; padding-top: 5%">
+										It's the home stretch! We've got everything set up and ready to go and now it's to try a complete run through using all our features. The video below shows the arm taking pictures at various positions and angles, and then returning to the home position. This test was successful, and shows how the communication between the Raspberry Pi and the camera gives quick and stable photographs.
+								</p>
+								<embed src="img/full_run.mp4" width="325" height="230" allowfullscreen="true" />								
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Portfolio Modal 1 -->
+				<div id="poster" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Finishing off our Symposium Poster</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/inspeksi-board.png" alt="Image" style="max-width:100%; ">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Portfolio Modal 1 -->
+				<div id="teamPhoto" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+				
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Team Photo</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+				
+							<div class="modal-body text-center">
+								<img src="img/team_photo.jpg" alt="Image" style="max-width:100%; ">
+							</div>
+						</div>
+					</div>
+				</div>
+
+
 
 </html>
